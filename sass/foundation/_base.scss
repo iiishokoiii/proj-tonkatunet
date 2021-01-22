@@ -1,0 +1,43 @@
+/* font
+---------------------------------------- */
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .15em;
+  font-family: "游ゴシック Medium","Yu Gothic Medium","游ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  line-height: 1.5;
+  color: #333;
+}
+p {
+  font-size: 0.12rem;
+  @include sp {
+    font-size: 0.15rem;
+  }
+  @include tablet {
+    font-size: 0.15rem;
+  }
+}
+.u-serif {
+  font-family: $font-family-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $col-txt;
+  transition-duration: $duration;
+  @include tablet {
+    &:hover {
+      opacity: 0.7;
+    }
+    cursor: pointer;
+  }
+}
+@keyframes submenu {
+  from{
+      opacity: 0.7;
+  }
+  to{
+      opacity: 1;
+  }
+}

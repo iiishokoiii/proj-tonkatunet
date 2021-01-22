@@ -1,0 +1,70 @@
+/* utility
+---------------------------------------- */
+.u-clx::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.u-li-disc {
+  list-style-type: disc;
+}
+.pc-only {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+.sp-only {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+span.pc-only {
+  display: none;
+  @include tablet {
+    display: inline-block;
+  }
+}
+span.sp-only {
+  display: inline-block;
+  @include tablet {
+    display: none;
+  }
+}
+.u-tac {text-align: center;}
+.u-tal {text-align: right;}
+.u-bold {font-weight: bold;}
+.u-red {color: $col-red;}
+.u-blue {color: $col-blue;}
+.u-red {color: $col-red;}
+.u-lth {text-decoration: line-through}
+.f16 {font-size: 0.16rem}
+.f18 {font-size: 0.18rem}
+.f20 {font-size: 0.20rem}
+.f22 {font-size: 0.22rem}
+.f24 {font-size: 0.24rem}
+.ls02{letter-spacing: 0.2em;}
+.ls03{letter-spacing: 0.3em;}
+.ls04{letter-spacing: 0.4em;}
+.ls05{letter-spacing: 0.5em;}
+.ls06{letter-spacing: 0.6em;}
+.ls07{letter-spacing: 0.7em;}
+.ls08{letter-spacing: 0.8em;}
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb45 {margin-bottom: 45px;}
+.mb50 {margin-bottom: 50px;}
+.mb60 {margin-bottom: 60px;}
+.mb70 {margin-bottom: 70px;}
+.mb80 {margin-bottom: 80px;}
+.mb90 {margin-bottom: 90px;}
+.mt5 {margin-top: 5px;}
+.mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt50 {margin-top: 50px;}

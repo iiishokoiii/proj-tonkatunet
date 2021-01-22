@@ -1,0 +1,57 @@
+/* layout
+---------------------------------------- */
+.l-content {
+  width: 100%;
+  margin: 0 auto 50px;
+  @include sp {
+    margin: 0 auto 80px;
+  }
+  @include tablet {
+    width: $w-content;
+    margin: 0 auto 100px;
+  }
+}
+.l-content-l {
+  width: 100%;
+  margin: 0 auto 50px;
+  @include sp {
+    margin: 0 auto 80px;
+  }
+  @include tablet {
+    margin: 0 auto 100px;
+  }
+}
+.l-content-s {
+  width: 100%;
+  @include tablet {
+    width: $w-content-s;
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+}
+.l-3col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  > * {
+    width: 31.7%;
+    margin-right: 2.45%;
+    margin-bottom: 20px;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}
+.l-4col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  > * {
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+}

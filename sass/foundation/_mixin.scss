@@ -1,0 +1,10 @@
+@mixin sp {
+  @media screen and (min-width: $bp-sp) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: $bp-tablet) {
+    @content;
+  }
+}
