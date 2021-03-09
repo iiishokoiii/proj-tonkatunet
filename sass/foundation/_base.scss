@@ -5,12 +5,12 @@ html {
 }
 body {
   font-size: .15em;
-  font-family: "游ゴシック Medium","Yu Gothic Medium","游ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  font-family: $font-family-sans-serif;
   line-height: 1.5;
   color: #333;
 }
 p {
-  font-size: 0.12rem;
+  font-size: 0.13rem;
   @include sp {
     font-size: 0.15rem;
   }
@@ -33,11 +33,7 @@ a {
     cursor: pointer;
   }
 }
-@keyframes submenu {
-  from{
-      opacity: 0.7;
-  }
-  to{
-      opacity: 1;
-  }
+@font-face {
+	font-family: 'Caveat-Regular';
+	src: url(/assets/font/Caveat-Regular.ttf);
 }

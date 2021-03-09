@@ -1,19 +1,185 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>タイトル</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="">
+    <title>とんかつネット</title>
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
     <!-- js -->
-    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c4d15628cf.js" crossorigin="anonymous"></script>
   </head>
   <body id="top">
-    サンプルページ
+    <header class="header">
+      <div class="header__inr">
+        <a href="/"  class="header__logo">
+          <img src="./assets/img/logo.png" width="167" height="102" alt="とんかつネット">
+        </a>
+        <p class="header__caption u-serif">とんかつ好きによる、とんかつ好きのための、とんかつメディア。</p>
+      </div>
+    </header>
+    <!-- <div class="nav js-main-nav">
+      <div class="nav__inr">
+        <nav class="nav__main">
+          <ul class="menu">
+            <li>
+              <a href="/lifework/">最新記事</a>
+            </li>
+            <li>
+              <a href="/news.html">特集</a>
+            </li>
+            <li>
+              <a href="#">プロフィール</a>
+            </li>
+            <li>
+              <a href="#">TOPへ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+    <div class="nav-overlay" id="js-nav-overlay"></div>
+    <div class="l-content-wrapper post">
+      <div class="l-content-2col">
+        <main class="l-2col__main">
+          <div class="content">
+            <div class="block-sns"></div>
+            <h1 class=""><span class="u-caveat f32">#027 </span>とんかつ激戦区の穴場店でSPF豚を堪能<br>まるやま食堂＠蒲田</h1>
+            <p>２月某日。週末の目黒に降り立つ。<br>
+              権之助坂をてくてく降りて、向かう先は、「とんかつ　大宝」、初めての訪問です。<br>
+              目黒はとんかつの激戦区のひとつ。<span class="mark">ここ「大宝」と「かつ壱」「とんき」をあわせ、目黒御三家なんて呼ばれることも。</span>お店に着くと、待ち客２名。ちょっと前まで長蛇の列だったとか。お店の前には「みよしラード」の缶がならび、期待がふつふつと高まります。待っている間にもまた、ぞくぞくとお客さんがやってきます。<br>
+              並んでいる間にオーダーを取りに来てくれました。店先に書かれたメニューの中から、「特製ロースカツ（1,850円）」を注文します。
+            </p>
+            <div class="block-menu">
+              <table>
+                <tr><th>ランチロース定食</th><td>1,200円</td></tr>
+                <tr><th>上ロース定食</th><td>1,800円</td></tr>
+                <tr><th>特上ロース定食</th><td>2,200円</td></tr>
+              </table>
+            </div>
+            <p>待つこと15分、入店。細い細い通路のカウンターと、奥に4人くらいでいっぱいになってしまいそうな、小さなテーブル席がひとつ。案内されたカウンターには、あったかい緑茶と、はりはり漬けがセットされています。このはりはり漬けは、けっこう甘じょっぱくて、ごはんと食べたいから取っておかなくちゃと思いながらも、ついついつまんでしまうやつです。</p>
+            <p>カウンターから見える揚げ場には、ふんわりとパン粉に包まれた大きなロースが一切れ、揚げ油に放り込まれるのを待ちながら静かに鎮座していらっしゃる。あれ、絶対、わたしの特製ロースカツ。<br>
+              はりはり漬けをつまみながら、待つこと10分ほど。ごはん、味噌汁に続き、いよいよ、わたしの特製ロースカツが到着です。</p>
+            <div class="block-main">
+              <div class="main-img">
+                <img src="./assets/img/img_thum01.jpg">
+              </div>
+            </div>
+            <div class="block-main">
+              <div class="main-img">
+                <img src="./assets/img/img_thum01.jpg">
+              </div>
+              <p class="badge"><span class="u-caveat badge__num">#027</span><span class="badge__txt">蒲田</span></p>
+              <p class="caption">丸八とんかつ店本店　上ロースカツ定食（1,850円）</p>
+            </div>
+            <p>まず目を引くのは、粗めのパン粉が、ほどよい中温であがった衣。お肉は200gほどでしょうか、一切れのカットが大きいです。脂身は少なめで、脂身ちかくのお肉は、ほんのりピンク色を残した仕上がり。
+              ざくざくした千切りキャベツは、けっこうな山盛りです。</p>
+            <div class="block-figure">
+              <div class="imgarea">
+                <img src="./assets/img/img_thum01.jpg">
+              </div>
+              <div class="caption">
+                <p>お通しのポテトサラダも、<br>一押しのポイント！</p>
+              </div>
+            </div>
+              <p>卓上の、ヒマラヤ塩でまずひと口。<br>
+                おお。おもわず、うなってしまうほど、やわらかい。ジュワッと肉汁があふれます。そしてお肉じたいの甘みと旨味がしっかりしている。脂身は少なめで、赤みのお肉の配分が多いのですが、お肉自体の味がしっかりしているので、食べ飽きしない。衣は見た目に反し、意外とふんわり軽やか、油断すると、ちょっと剥がれてしまいそうな優しい衣です、ラードの香りがふわりと鼻をくすぐります。<br>
+                お塩はきめの細かいタイプで、お肉の甘みが引き立ちます。これは、、よい！</p>
+            <div class="block-figure reverse">
+              <div class="imgarea">
+                <img src="./assets/img/img_thum01.jpg">
+              </div>
+              <div class="caption">
+                <p>お通しのポテトサラダも、<br>一押しのポイント！</p>
+              </div>
+            </div>
+
+          </div>
+        </main>
+        <aside class="l-2col__side js-sidemenu">
+          <div class="l-2col__side__inr01 u-space--l">
+            <form class="search-form u-space--l">
+              <input class="input" type="search" placeholder="キーワード検索">
+              <input class="btn" type="submit" value="">
+            </form>
+            <div class="u-space">
+              <h1 class="ttl-lv1"><span>カテゴリー</span></h1>
+              <ul class="link-list">
+                <li class="link-list__item">とんかつめぐり</li>
+                <li class="link-list__item">特集</li>
+                <li class="link-list__item">番外編</li>
+              </ul>
+            </div>
+            <div>
+              <h1 class="ttl-lv1"><span>新着記事</span></h1>
+              <ul class="link-card">
+                <li class="link-card__item">
+                  <a class="card" href="#">
+                    <figure class="card__imgwrap">
+                      <img src="./assets/img/img_thum01.jpg">
+                    </figure>
+                    <div class="card__body">
+                      <p class="ttl"><span class="u-caveat">#027 </span>とんかつ激戦区の穴場店でSPF豚を堪能
+                        まるやま食堂＠蒲田</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="link-card__item">
+                  <a class="card" href="#">
+                    <figure class="card__imgwrap">
+                      <img src="./assets/img/img_thum01.jpg">
+                    </figure>
+                    <div class="card__body">
+                      <p class="ttl"><span class="u-caveat">#027 </span>とんかつ激戦区の穴場店でSPF豚を堪能
+                        まるやま食堂＠蒲田</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="link-card__item">
+                  <a class="card" href="#">
+                    <figure class="card__imgwrap">
+                      <img src="./assets/img/img_thum01.jpg">
+                    </figure>
+                    <div class="card__body">
+                      <p class="ttl"><span class="u-caveat">#027 </span>とんかつ激戦区の穴場店でSPF豚を堪能
+                        まるやま食堂＠蒲田</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="link-card__item">
+                  <a class="card" href="#">
+                    <figure class="card__imgwrap">
+                      <img src="./assets/img/img_thum01.jpg">
+                    </figure>
+                    <div class="card__body">
+                      <p class="ttl"><span class="u-caveat">#027 </span>とんかつ激戦区の穴場店でSPF豚を堪能
+                        まるやま食堂＠蒲田</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="l-2col__side__inr02 u-space--l">
+            <div class="block-author">
+              <div class="block-author__l">
+                <h1 class="ttl">著者</h1>
+                <figure class="icon"><img src="./assets/img/img_thum01.jpg"></figure>
+                <p>insta: <a>shoko_o_o</a></p>
+              </div>
+              <div class="block-author__r">
+                <p class="name">とんかつちゃん</p>
+                <p class="txt">都内近郊のお店を中心に、とん活中。とんかつについて語りたくて、とんかつサイトを作ってみました。本人、大真面目。</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy;2021 TonkatuNet.</p>
+    </footer>
   </body>
 </html>

@@ -32,18 +32,50 @@ span.sp-only {
     display: none;
   }
 }
+.u-space {
+  margin-bottom: 20px;
+  @include sp {
+    margin-bottom: 25px;
+  }
+  @include tablet {
+    margin-bottom: 35px;
+  }
+}
+.u-space--l {
+  margin-bottom: 30px;
+  @include sp {
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    margin-bottom: 70px;
+  }
+}
+.u-space--s {
+  margin-bottom: 10px;
+  @include sp {
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
 .u-tac {text-align: center;}
 .u-tal {text-align: right;}
 .u-bold {font-weight: bold;}
-.u-red {color: $col-red;}
-.u-blue {color: $col-blue;}
-.u-red {color: $col-red;}
 .u-lth {text-decoration: line-through}
+.u-serif{font-family: $font-family-serif;}
+.u-caveat{font-family: $font-family-caveat;}
 .f16 {font-size: 0.16rem}
 .f18 {font-size: 0.18rem}
 .f20 {font-size: 0.20rem}
 .f22 {font-size: 0.22rem}
 .f24 {font-size: 0.24rem}
+.f26 {font-size: 0.26rem}
+.f28 {font-size: 0.28rem}
+.f30 {font-size: 0.30rem}
+.f32 {font-size: 0.32rem}
+.f34 {font-size: 0.34rem}
+.f36 {font-size: 0.36rem}
 .ls02{letter-spacing: 0.2em;}
 .ls03{letter-spacing: 0.3em;}
 .ls04{letter-spacing: 0.4em;}

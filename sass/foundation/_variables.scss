@@ -1,14 +1,15 @@
 //color
 $col-txt: #333;
-$col-bg: #f4f4f4;
-$col-bg-footer: #212121;
-$col-red: #d2040a;
-$col-blue: #0009e1;
-$col-grey01: #cfcfcf;
-$col-grey02: #909090;
+$col-main01: #FFE940;
+$col-main02: #44B4AD;
+$col-main03: #C4E7E5;
+$col-bg01: #ecf5f5;
+$col-bg03: #4d5554;
+$col-sub01: #deb956;
+$col-sub02: #cad3d5;
 //layout
-$w-content: 1250px; //innner:-padding: 80x2
-$w-content-s: 890px; //innner:-l-padding: 50
+$w-content: 1140px; //innner:-padding: 80x2
+$w-post: 740px;
 $h-footer: 50px;
 //hover-duration
 $duration: 0.4s;
@@ -16,4 +17,6 @@ $duration: 0.4s;
 $bp-sp: 561px;
 $bp-tablet: 961px;
 //font-family
+$font-family-sans-serif:"游ゴシック Medium","Yu Gothic Medium","游ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
 $font-family-serif: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+$font-family-caveat: "Caveat-Regular", serif;

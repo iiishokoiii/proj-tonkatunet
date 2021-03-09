@@ -8,3 +8,8 @@
     @content;
   }
 }
+@mixin wide {
+  @media screen and (min-width: $bp-pc-wide) {
+    @content;
+  }
+}
