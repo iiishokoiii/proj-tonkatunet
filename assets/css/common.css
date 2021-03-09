@@ -1,0 +1,770 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q,
+samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* font
+---------------------------------------- */
+html {
+  font-size: 625%;
+}
+
+body {
+  font-size: .15em;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  line-height: 1.5;
+  color: #333;
+}
+
+p {
+  font-size: 0.12rem;
+}
+
+.u-serif {
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition-duration: 0.4s;
+}
+
+@font-face {
+  font-family: 'Caveat-Regular';
+  src: url(/assets/font/Caveat-Regular.ttf);
+}
+
+/* layout
+---------------------------------------- */
+.l-content-wrapper {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.l-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-content-2col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-2col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+}
+
+.l-2col > * {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 20px;
+}
+
+.l-2col > *:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.l-3col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+}
+
+.l-3col > * {
+  width: 31.7%;
+  margin-right: 2.45%;
+  margin-bottom: 20px;
+}
+
+.l-3col > *:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.l-4col {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+}
+
+.l-4col > * {
+  width: 23%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+
+.l-4col > *:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+body.is-fixed {
+  position: fixed;
+}
+
+.header {
+  position: fixed;
+  height: 25px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  z-index: 20;
+}
+
+.header__logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* commonーparts
+---------------------------------------- */
+.post main p {
+  font-size: 0.16rem;
+  line-height: 2;
+}
+
+.post main p + p {
+  margin-top: 20px;
+}
+
+.post-ttl-lv1,
+.post main h1 {
+  position: relative;
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-size: 0.24rem;
+  width: 100%;
+  padding: 46px 0;
+  text-align: center;
+}
+
+.post-ttl-lv1::before, .post-ttl-lv1::after,
+.post main h1::before,
+.post main h1::after {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 72px;
+  background-repeat: no-repeat;
+}
+
+.post-ttl-lv1::before,
+.post main h1::before {
+  top: 0;
+  left: 0;
+  background-image: url("/assets/img/img_bg_ttl01.png");
+}
+
+.post-ttl-lv1::after,
+.post main h1::after {
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/img/img_bg_ttl02.png");
+}
+
+.post main mark,
+.mark {
+  background: linear-gradient(transparent 65%, #C4E7E5 65%);
+  font-weight: bold;
+  padding: 0.2em 0;
+  border-radius: 2px;
+}
+
+.ttl-lv1 {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.ttl-lv1 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-size: 0.20rem;
+}
+
+.ttl-lv1 span::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #777;
+  left: 0;
+  bottom: 0;
+  content: "";
+  z-index: 3;
+}
+
+.ttl-lv1 span::after {
+  position: absolute;
+  width: 94%;
+  height: 16px;
+  background: #cad3d5;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  border-radius: 2px;
+  content: "";
+  z-index: 2;
+}
+
+.search-form {
+  display: flex;
+  height: 58px;
+  border: 2px solid #cad3d5;
+  font-size: 0.16rem;
+}
+
+.search-form .input {
+  width: calc(100% - 58px);
+  border: none;
+  padding: 0 20px;
+}
+
+.search-form .input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.search-form .input::-moz-placeholder {
+  color: #aaa;
+}
+
+.search-form .input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.search-form .input::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.search-form .input::placeholder {
+  color: #aaa;
+}
+
+.search-form .btn {
+  width: 58px;
+  border: none;
+  background: #cad3d5 url("/assets/img/icon_search.png") center center/36px 36px no-repeat;
+}
+
+.badge {
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #4d5554;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.badge__num {
+  display: block;
+  font-family: "Caveat-Regular", serif;
+  font-size: 0.32rem;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 0 0;
+  border-bottom: 1px solid #fff;
+}
+
+.badge__txt {
+  display: block;
+  font-size: 0.18rem;
+  line-height: 1.5;
+  padding: 4px 0 0;
+}
+
+.txt-caption {
+  font-size: 0.12rem;
+  color: #aaa;
+}
+
+.block-main {
+  margin: 40px 0 60px;
+  position: relative;
+}
+
+.block-main .main-img {
+  position: relative;
+  width: 100%;
+  padding-top: 64%;
+  overflow: hidden;
+}
+
+.block-main .main-img > img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.block-main .badge {
+  position: absolute;
+  bottom: 8px;
+  right: 18px;
+  z-index: 10;
+}
+
+.block-main .caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-size: 0.24rem;
+  font-weight: bold;
+  background-color: #fff;
+  opacity: 0.84;
+  z-index: 8;
+}
+
+.block-figure {
+  margin: 40px 0;
+}
+
+.block-figure .imgarea > img {
+  width: 100%;
+  height: auto;
+}
+
+.block-figure .caption {
+  padding: 0 24px;
+}
+
+.block-figure .caption p {
+  position: relative;
+  display: inline-block;
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-size: 0.20rem;
+  width: 100%;
+  padding: 32px 40px;
+  text-align: center;
+}
+
+.block-figure .caption p::before, .block-figure .caption p::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 122px;
+  background-repeat: no-repeat;
+}
+
+.block-figure .caption p::before {
+  top: 0;
+  left: 0;
+  background-image: url("/assets/img/img_bg_caption01.png");
+}
+
+.block-figure .caption p::after {
+  top: 0;
+  right: 0;
+  background-image: url("/assets/img/img_bg_caption02.png");
+}
+
+.block-menu {
+  margin: 40px 0;
+  padding: 12px 0;
+  font-size: 0.18rem;
+  border-top: 3px dashed #cad3d5;
+  border-bottom: 3px dashed #cad3d5;
+}
+
+.block-menu table {
+  width: 60%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.block-menu table th {
+  width: 70%;
+  padding: 8px 0;
+  font-weight: normal;
+  text-align: left;
+}
+
+.block-menu table td {
+  padding: 8px 0;
+  width: 30%;
+  text-align: right;
+}
+
+.block-menu table td::before {
+  content: "・・・ ";
+}
+
+.block-comment {
+  background: #cad3d5;
+  border-radius: 10px;
+}
+
+.link-list {
+  border-top: 1px solid #ccc;
+}
+
+.link-list__item {
+  font-size: 0.18rem;
+  font-weight: normal;
+  padding: 12px 46px;
+  border-bottom: 1px solid #ccc;
+  background: url("/assets/img/Icon arrow_circle.png") 10px center/20px 20px no-repeat;
+}
+
+/* utility
+---------------------------------------- */
+.u-clx::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.u-li-disc {
+  list-style-type: disc;
+}
+
+.pc-only {
+  display: none;
+}
+
+.sp-only {
+  display: block;
+}
+
+span.pc-only {
+  display: none;
+}
+
+span.sp-only {
+  display: inline-block;
+}
+
+.u-space {
+  margin-bottom: 20px;
+}
+
+.u-space--l {
+  margin-bottom: 30px;
+}
+
+.u-space--s {
+  margin-bottom: 10px;
+}
+
+.u-tac {
+  text-align: center;
+}
+
+.u-tal {
+  text-align: right;
+}
+
+.u-bold {
+  font-weight: bold;
+}
+
+.u-lth {
+  text-decoration: line-through;
+}
+
+.u-serif {
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+}
+
+.u-caveat {
+  font-family: "Caveat-Regular", serif;
+}
+
+.f16 {
+  font-size: 0.16rem;
+}
+
+.f18 {
+  font-size: 0.18rem;
+}
+
+.f20 {
+  font-size: 0.20rem;
+}
+
+.f22 {
+  font-size: 0.22rem;
+}
+
+.f24 {
+  font-size: 0.24rem;
+}
+
+.f26 {
+  font-size: 0.26rem;
+}
+
+.f28 {
+  font-size: 0.28rem;
+}
+
+.f30 {
+  font-size: 0.30rem;
+}
+
+.f32 {
+  font-size: 0.32rem;
+}
+
+.f34 {
+  font-size: 0.34rem;
+}
+
+.f36 {
+  font-size: 0.36rem;
+}
+
+.ls02 {
+  letter-spacing: 0.2em;
+}
+
+.ls03 {
+  letter-spacing: 0.3em;
+}
+
+.ls04 {
+  letter-spacing: 0.4em;
+}
+
+.ls05 {
+  letter-spacing: 0.5em;
+}
+
+.ls06 {
+  letter-spacing: 0.6em;
+}
+
+.ls07 {
+  letter-spacing: 0.7em;
+}
+
+.ls08 {
+  letter-spacing: 0.8em;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb45 {
+  margin-bottom: 45px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mb70 {
+  margin-bottom: 70px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mb90 {
+  margin-bottom: 90px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 561px) {
+  p {
+    font-size: 0.15rem;
+  }
+  .l-content-2col {
+    flex-direction: row;
+  }
+  .l-content-2col .l-2col__main {
+    width: 740px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+  .l-content-2col .l-2col__side {
+    width: 362px;
+    padding: 80px 20px;
+    background: url("/assets/img/img_bg_tri01.png") left top/33px 20px repeat-x, url("/assets/img/img_bg_tri01.png") left bottom/33px 20px repeat-x;
+  }
+  .header__logo {
+    top: 25px;
+    left: 25px;
+  }
+  .u-space {
+    margin-bottom: 25px;
+  }
+  .u-space--l {
+    margin-bottom: 50px;
+  }
+  .u-space--s {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  p {
+    font-size: 0.15rem;
+  }
+  a {
+    cursor: pointer;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  .l-content {
+    width: 1140px;
+  }
+  .l-content-2col {
+    width: 1140px;
+  }
+  .header__logo {
+    top: 30px;
+    left: 30px;
+  }
+  .block-figure {
+    display: flex;
+    align-items: center;
+  }
+  .block-figure .imgarea,
+  .block-figure .caption {
+    width: 50%;
+  }
+  .block-figure.reverse {
+    flex-direction: row-reverse;
+  }
+  .pc-only {
+    display: block;
+  }
+  .sp-only {
+    display: none;
+  }
+  span.pc-only {
+    display: inline-block;
+  }
+  span.sp-only {
+    display: none;
+  }
+  .u-space {
+    margin-bottom: 35px;
+  }
+  .u-space--l {
+    margin-bottom: 70px;
+  }
+  .u-space--s {
+    margin-bottom: 30px;
+  }
+}

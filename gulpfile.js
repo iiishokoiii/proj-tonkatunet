@@ -23,7 +23,7 @@ gulp.task("sass", function () {
       .pipe(autoprefixer())
       .pipe(postcss([mqpacker()]))
       // cssフォルダー以下に保存
-      .pipe(gulp.dest("./css"))
+      .pipe(gulp.dest("./assets/css"))
       .pipe(bs.stream())
   );
 });
