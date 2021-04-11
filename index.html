@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>とんかつネット</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/vnd.microsoft.icon">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <!-- js -->
     <script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
@@ -20,27 +22,7 @@
         <p class="header__caption u-serif">とんかつ好きによる、とんかつ好きのための、とんかつメディア。</p>
       </div>
     </header>
-    <!-- <div class="nav js-main-nav">
-      <div class="nav__inr">
-        <nav class="nav__main">
-          <ul class="menu">
-            <li>
-              <a href="/lifework/">最新記事</a>
-            </li>
-            <li>
-              <a href="/news.html">特集</a>
-            </li>
-            <li>
-              <a href="#">プロフィール</a>
-            </li>
-            <li>
-              <a href="#">TOPへ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div> -->
-    <div class="nav-overlay" id="js-nav-overlay"></div>
+    <!-- <div class="nav-overlay" id="js-nav-overlay"></div> -->
     <div class="l-content-wrapper post">
       <div class="l-content-2col">
         <main class="l-2col__main">
@@ -84,9 +66,9 @@
                 <p>お通しのポテトサラダも、<br>一押しのポイント！</p>
               </div>
             </div>
-              <p>卓上の、ヒマラヤ塩でまずひと口。<br>
-                おお。おもわず、うなってしまうほど、やわらかい。ジュワッと肉汁があふれます。そしてお肉じたいの甘みと旨味がしっかりしている。脂身は少なめで、赤みのお肉の配分が多いのですが、お肉自体の味がしっかりしているので、食べ飽きしない。衣は見た目に反し、意外とふんわり軽やか、油断すると、ちょっと剥がれてしまいそうな優しい衣です、ラードの香りがふわりと鼻をくすぐります。<br>
-                お塩はきめの細かいタイプで、お肉の甘みが引き立ちます。これは、、よい！</p>
+            <p>卓上の、ヒマラヤ塩でまずひと口。<br>
+              おお。おもわず、うなってしまうほど、やわらかい。ジュワッと肉汁があふれます。そしてお肉じたいの甘みと旨味がしっかりしている。脂身は少なめで、赤みのお肉の配分が多いのですが、お肉自体の味がしっかりしているので、食べ飽きしない。衣は見た目に反し、意外とふんわり軽やか、油断すると、ちょっと剥がれてしまいそうな優しい衣です、ラードの香りがふわりと鼻をくすぐります。<br>
+              お塩はきめの細かいタイプで、お肉の甘みが引き立ちます。これは、、よい！</p>
             <div class="block-figure reverse">
               <div class="imgarea">
                 <img src="./assets/img/img_thum01.jpg">
@@ -95,8 +77,38 @@
                 <p>お通しのポテトサラダも、<br>一押しのポイント！</p>
               </div>
             </div>
-
+            <p>おごちそうさまでした！</p>
           </div>
+          <div class="block-about">
+            <div class="block-about__inr">
+              <figure class="block-about__imgwrap">
+                <img src="./assets/img/img_thum01.jpg">
+              </figure>
+              <div class="block-about__body">
+                <div class="toparea">
+                  <p class="name">丸八とんかつ店 本店 （まるはちとんかつてん）</p>
+                  <div class="sns">
+                    <a class="sns__item tw" href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a class="sns__item fb" href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a class="sns__item insta" href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                    <a class="sns__item tw" href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <p>住所：<a href="https://goo.gl/maps/zMJfhGFFhVHfqh4V9">東京都品川区東大井5-4-10</a></p>
+                <p>営業時間：11:30～22:00(L.O.21:30) 日曜営業</p>
+                <p>定休日：月曜（月曜が祝日の場合は月曜営業、火曜休）第三月、火は連休</p>
+                <p class="caption">※ 営業時間/定休日は変更になる場合がありますので、最新情報は店舗にご確認ください</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="block-sammary">
+            <div class="border"></div>
+            <div class="block-sammary__inr">
+              <h2 class="ttl">勝手にとんかつチャート！</h2>
+              <div></div>
+            </div>
+            <div class="border"></div>
+          </div> -->
         </main>
         <aside class="l-2col__side js-sidemenu">
           <div class="l-2col__side__inr01 u-space--l">
@@ -107,9 +119,9 @@
             <div class="u-space">
               <h1 class="ttl-lv1"><span>カテゴリー</span></h1>
               <ul class="link-list">
-                <li class="link-list__item">とんかつめぐり</li>
-                <li class="link-list__item">特集</li>
-                <li class="link-list__item">番外編</li>
+                <li class="link-list__item"><a href="#"><i class="fas fa-chevron-circle-right"></i>とんかつめぐり</a></li>
+                <li class="link-list__item"><a href="#"><i class="fas fa-chevron-circle-right"></i>特集</a></li>
+                <li class="link-list__item"><a href="#"><i class="fas fa-chevron-circle-right"></i>番外編</a></li>
               </ul>
             </div>
             <div>
@@ -163,14 +175,13 @@
             </div>
           </div>
           <div class="l-2col__side__inr02 u-space--l">
-            <div class="block-author">
-              <div class="block-author__l">
-                <h1 class="ttl">著者</h1>
-                <figure class="icon"><img src="./assets/img/img_thum01.jpg"></figure>
-                <p>insta: <a>shoko_o_o</a></p>
+            <div class="block-profile">
+              <div class="block-profile__l">
+                <figure class="icon"><img src="./assets/img/ic_profile.png"></figure>
+                <p class="sns"><a class="sns__link" href="https://www.instagram.com/shoko_o_o/?hl=ja"><i class="fab fa-instagram"></i><span class="sns__txt">follow me!</span></a></p>
               </div>
-              <div class="block-author__r">
-                <p class="name">とんかつちゃん</p>
+              <div class="block-profile__r">
+                <p class="name">Shoko Oda</p>
                 <p class="txt">都内近郊のお店を中心に、とん活中。とんかつについて語りたくて、とんかつサイトを作ってみました。本人、大真面目。</p>
               </div>
             </div>

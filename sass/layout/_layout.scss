@@ -1,9 +1,9 @@
 /* layout
 ---------------------------------------- */
 body {
-  background: url('/assets/img/img_bg_main01.png') right top / 95px no-repeat, url('/assets/img/img_bg_main02.png') left bottom / 95px no-repeat;
+  background: url('../img/img_bg_main01.png') right top / 95px no-repeat, url('../img/img_bg_main02.png') left bottom / 95px no-repeat;
   @include sp {
-    background: url('/assets/img/img_bg_main01.png') right top / 190px 157px no-repeat, url('/assets/img/img_bg_main02.png') left bottom / 190px 157px no-repeat;
+    background: url('../img/img_bg_main01.png') right top / 190px 157px no-repeat, url('../img/img_bg_main02.png') left bottom / 190px 157px no-repeat;
   }
 }
 .l-content-wrapper {
@@ -19,18 +19,19 @@ body {
 .l-content-2col {
   width: 100%;
   margin: 0 auto;
+  position: relative;
   .l-2col__main {
-    padding: 20px 16px;
+    padding: 20px $sp-padding;
   }
   .l-2col__side {
     display: flex;
     flex-direction: column-reverse;
     &__inr01 {
       background-color: $col-bg01;
-      padding: 40px 20px;
+      padding: 40px $sp-padding;
     }
     &__inr02 {
-      padding: 24px 20px;
+      padding: 24px $sp-padding;
     }
   }
   @include sp {
@@ -45,7 +46,7 @@ body {
       float: left;
       width: 36%;
       padding: 60px 10px 20px;
-      background: url('/assets/img/img_bg_tri01.png') left top / 33px 20px repeat-x, url('/assets/img/img_bg_tri01.png') left bottom / 33px 20px repeat-x;
+      background: url('../img/img_bg_tri01.png') left top / 33px 20px repeat-x, url('../img/img_bg_tri01.png') left bottom / 33px 20px repeat-x;
       flex-direction: column;
       margin-bottom: 20px;
       &__inr01 {
@@ -58,7 +59,7 @@ body {
       &.is-fixed {
         position: fixed;
         bottom: 0;
-        right: 10px;
+        right: 0;
       }
     }
     &::after {
@@ -68,10 +69,10 @@ body {
     }
   }
   @include tablet {
-    width: $w-content;
+    max-width: $w-content;
     padding: 0;
     .l-2col__main {
-      width: 740px;
+      width: calc(100% - 400px);
       margin: 0 40px 60px 0;
     }
     .l-2col__side {
@@ -79,7 +80,15 @@ body {
       padding: 70px 20px 20px;
       &.is-fixed {
         bottom: 0;
-        right: calc(50% - 570px);
+        right: 0;
+      }
+    }
+  }
+  @include wide {
+    .l-2col__side {
+      &.is-fixed {
+        bottom: 0;
+        right: calc(50% - 600px);
       }
     }
   }
