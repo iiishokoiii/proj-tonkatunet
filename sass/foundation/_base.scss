@@ -9,13 +9,16 @@ body {
   line-height: 1.5;
   color: #333;
 }
-p {
-  font-size: 0.13rem;
+p, ul {
+  font-size: 0.15rem;
   @include sp {
-    font-size: 0.15rem;
+    font-size: 0.16rem;
   }
   @include tablet {
-    font-size: 0.15rem;
+    font-size: 0.16rem;
+  }
+  @include wide {
+    font-size: 0.16rem;
   }
 }
 .u-serif {

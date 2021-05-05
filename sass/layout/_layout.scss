@@ -21,14 +21,14 @@ body {
   margin: 0 auto;
   position: relative;
   .l-2col__main {
-    padding: 20px $sp-padding;
+    padding: 4px $sp-padding 10px;
   }
   .l-2col__side {
     display: flex;
     flex-direction: column-reverse;
     &__inr01 {
       background-color: $col-bg01;
-      padding: 40px $sp-padding;
+      padding: 30px $sp-padding;
     }
     &__inr02 {
       padding: 24px $sp-padding;
@@ -39,13 +39,13 @@ body {
     .l-2col__main {
       float: left;
       width: 64%;
-      padding: 20px;
+      padding: 10px;
       margin: 0 0 60px 0;
     }
     .l-2col__side {
       float: left;
       width: 36%;
-      padding: 60px 10px 20px;
+      padding: 30px 10px 20px;
       background: url('../img/img_bg_tri01.png') left top / 33px 20px repeat-x, url('../img/img_bg_tri01.png') left bottom / 33px 20px repeat-x;
       flex-direction: column;
       margin-bottom: 20px;
@@ -72,12 +72,12 @@ body {
     max-width: $w-content;
     padding: 0;
     .l-2col__main {
-      width: calc(100% - 400px);
-      margin: 0 40px 60px 0;
+      width: calc(100% - 420px);
+      margin: 0 20px 60px 0;
     }
     .l-2col__side {
-      width: 360px;
-      padding: 70px 20px 20px;
+      width: 400px;
+      padding: 50px 20px 100px;
       &.is-fixed {
         bottom: 0;
         right: 0;
