@@ -269,7 +269,7 @@ body.is-fixed {
 .post h1 {
   position: relative;
   font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
-  font-size: 0.16rem;
+  font-size: 0.17rem;
   width: 100%;
   margin-bottom: 12px;
   padding: 20px 0;
@@ -476,6 +476,43 @@ body.is-fixed {
 .block-about .caption {
   color: #666;
   font-size: 0.12rem;
+}
+
+.block-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  margin: 30px auto 0;
+}
+
+.block-gallery__item {
+  display: flex;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 20px;
+}
+
+.block-gallery__item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.gallery__imgwrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex: 0 1 30%;
+}
+
+.gallery__imgwrap img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery__caption {
+  flex: 1;
+  color: #666;
+  font-size: 0.12rem;
+  margin-top: 8px;
 }
 
 .block-sammary {
@@ -1063,6 +1100,20 @@ span.sp-only {
     line-height: 20px;
   }
   .block-about .caption {
+    font-size: 0.13rem;
+  }
+  .block-gallery__item {
+    width: 31.7%;
+    margin-right: 2.45%;
+    margin-bottom: 20px;
+  }
+  .block-gallery__item:nth-of-type(2n) {
+    margin-right: 2.45%;
+  }
+  .block-gallery__item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .gallery__caption {
     font-size: 0.13rem;
   }
   .link-card-large__item {
