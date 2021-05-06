@@ -311,7 +311,8 @@ body.is-fixed {
   overflow: hidden;
 }
 
-.block-main .main-img > img {
+.block-main .main-img img,
+.block-main .main-img source {
   position: absolute;
   width: 100%;
   height: auto;
@@ -1164,6 +1165,7 @@ span.sp-only {
   .l-content-2col .l-2col__main {
     width: calc(100% - 420px);
     margin: 0 20px 60px 0;
+    min-height: 1200px;
   }
   .l-content-2col .l-2col__side {
     width: 400px;

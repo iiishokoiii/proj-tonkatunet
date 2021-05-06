@@ -74,6 +74,7 @@ body {
     .l-2col__main {
       width: calc(100% - 420px);
       margin: 0 20px 60px 0;
+      min-height: 1200px;
     }
     .l-2col__side {
       width: 400px;
