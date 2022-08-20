@@ -2,7 +2,10 @@
 ---------------------------------------- */
 /* main post */
 .post  p {
-  line-height: 2;
+  line-height: 2.2;
+  @include tablet {
+    line-height: 2.2;
+  }
 }
 .post  p + p {
   margin-top: 16px;
@@ -43,7 +46,12 @@
   border-radius: 10px;
   list-style: disc;
   li {
+    margin-right: 1em;
     margin-left: 2.0em;
+    overflow-wrap: break-word;
+  }
+  li + li {
+    margin-top: 0.4em;
   }
 }
 .post-ttl-lv1,
@@ -320,7 +328,7 @@
       width: 100%;
       overflow: hidden;
       flex: 0 1 30%;
-      > img {
+      img, source {
         position: absolute;
         width: 100%;
         height: auto;
@@ -335,15 +343,16 @@
     text-decoration: underline;
   }
   p {
-    font-size: 0.14rem;
+    font-size: 0.13rem;
     @include tablet {
-      font-size: 0.15rem;
+      font-size: 0.14rem;
     }
   }
   p + p {
     margin-top: 5px;
   }
   .toparea {
+    margin-bottom: 8px;
     .name {
       font-size: 0.15rem;
       line-height: 16px;
@@ -424,7 +433,7 @@
     width: 100%;
     overflow: hidden;
     flex: 0 1 30%;
-    img {
+    img, source {
       width: 100%;
       height: auto;
     }
@@ -514,7 +523,7 @@
     width: 100%;
     overflow: hidden;
     flex: 0 1 30%;
-    > img {
+    img, source {
       width: 100%;
       height: auto;
     }
@@ -563,7 +572,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    > img {
+    img, source {
       width: 100%;
       height: auto;
     }

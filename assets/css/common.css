@@ -70,7 +70,7 @@ html {
 
 body {
   font-size: .15em;
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Sans", Meiryo, "sans-serif";
   line-height: 1.5;
   color: #333;
 }
@@ -80,7 +80,7 @@ p, ul {
 }
 
 .u-serif {
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
 }
 
 a {
@@ -93,6 +93,54 @@ a {
 @font-face {
   font-family: 'Caveat-Regular';
   src: url(../font/Caveat-Regular.ttf);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.eot);
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.woff2) format("woff2"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.woff) format("woff"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.ttf) format("truetype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.eot);
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.woff2) format("woff2"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.woff) format("woff"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.ttf) format("truetype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+}
+
+.fab,
+.far {
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.eot);
+  src: url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.woff2) format("woff2"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.woff) format("woff"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.ttf) format("truetype"), url(//use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa,
+.fas {
+  font-weight: 900;
 }
 
 /* layout
@@ -226,7 +274,7 @@ body.is-fixed {
 ---------------------------------------- */
 /* main post */
 .post p {
-  line-height: 2;
+  line-height: 2.2;
 }
 
 .post p + p {
@@ -262,13 +310,19 @@ body.is-fixed {
 }
 
 .post ul li {
+  margin-right: 1em;
   margin-left: 2.0em;
+  overflow-wrap: break-word;
+}
+
+.post ul li + li {
+  margin-top: 0.4em;
 }
 
 .post-ttl-lv1,
 .post h1 {
   position: relative;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
   font-size: 0.17rem;
   width: 100%;
   margin-bottom: 12px;
@@ -358,7 +412,7 @@ body.is-fixed {
   left: 50%;
   transform: translateX(-50%);
   padding: 4px 10px;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
   font-size: 0.16rem;
   font-weight: bold;
   background-color: #fff;
@@ -377,7 +431,7 @@ body.is-fixed {
 .block-figure .caption {
   padding: 20px 26px 10px;
   background: url("../img/img_bg_caption01.png") top left/30px no-repeat, url("../img/img_bg_caption02.png") top right/30px no-repeat;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
   text-align: center;
 }
 
@@ -433,11 +487,15 @@ body.is-fixed {
 }
 
 .block-about p {
-  font-size: 0.14rem;
+  font-size: 0.13rem;
 }
 
 .block-about p + p {
   margin-top: 5px;
+}
+
+.block-about .toparea {
+  margin-bottom: 8px;
 }
 
 .block-about .toparea .name {
@@ -504,7 +562,7 @@ body.is-fixed {
   flex: 0 1 30%;
 }
 
-.gallery__imgwrap img {
+.gallery__imgwrap img, .gallery__imgwrap source {
   width: 100%;
   height: auto;
 }
@@ -608,7 +666,7 @@ body.is-fixed {
   flex: 0 1 30%;
 }
 
-.card__imgwrap > img {
+.card__imgwrap img, .card__imgwrap source {
   width: 100%;
   height: auto;
 }
@@ -620,7 +678,7 @@ body.is-fixed {
 
 .card__body .ttl {
   font-size: 0.15rem;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
 }
 
 .card__body .u-caveat {
@@ -655,7 +713,7 @@ body.is-fixed {
   overflow: hidden;
 }
 
-.card-large__imgwrap > img {
+.card-large__imgwrap img, .card-large__imgwrap source {
   width: 100%;
   height: auto;
 }
@@ -667,7 +725,7 @@ body.is-fixed {
 
 .card-large__body .ttl {
   font-size: 0.15rem;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
 }
 
 .card-large__body .u-caveat {
@@ -746,7 +804,7 @@ body.is-fixed {
   position: relative;
   display: inline-block;
   padding-bottom: 8px;
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
   font-size: 0.20rem;
 }
 
@@ -831,7 +889,7 @@ span.sp-only {
 }
 
 .u-serif {
-  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝 medium", "ＭＳ 明朝", serif;
+  font-family: "Helvetica Neue", Arial, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
 }
 
 .u-caveat {
@@ -992,7 +1050,7 @@ span.sp-only {
 
 @media screen and (min-width: 561px) {
   p, ul {
-    font-size: 0.16rem;
+    font-size: 0.15rem;
   }
   body {
     background: url("../img/img_bg_main01.png") right top/190px 157px no-repeat, url("../img/img_bg_main02.png") left bottom/190px 157px no-repeat;
@@ -1178,6 +1236,9 @@ span.sp-only {
   .header__logo {
     margin-right: 20px;
   }
+  .post p {
+    line-height: 2.2;
+  }
   .post-ttl-lv1,
   .post h1 {
     font-size: 0.20rem;
@@ -1255,7 +1316,7 @@ span.sp-only {
     overflow: hidden;
     flex: 0 1 30%;
   }
-  .block-about__imgwrap > img {
+  .block-about__imgwrap img, .block-about__imgwrap source {
     position: absolute;
     width: 100%;
     height: auto;
@@ -1265,7 +1326,7 @@ span.sp-only {
     padding-left: 20px;
   }
   .block-about p {
-    font-size: 0.15rem;
+    font-size: 0.14rem;
   }
   .block-about .toparea .sns__item i {
     font-size: 0.20rem;
